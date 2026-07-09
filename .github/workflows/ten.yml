@@ -32,11 +32,11 @@ jobs:
 
       - name: clone repo
         run: |
-          git clone https://github.com/Decent5013-linux/Adnade && cd Adnade
+          git clone https://github.com/coderiscodingo/cte && cd cte
 
       - name: Run docker compose
         run: |
-          cd Adnade && docker compose -f docker-compose.yml up -d --build
+          cd cte && docker compose -f docker-compose.yml up -d --build
 
       - name: Keep workflow running for 6 hours
         run: |
