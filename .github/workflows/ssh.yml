@@ -1,4 +1,4 @@
-name: SSH crewvery + spendaverage
+name: SSH crewvery + spendaverage + skininmate
 
 on:
   workflow_dispatch:
@@ -17,6 +17,7 @@ jobs:
 
           echo "${{ secrets.SSH_KEY2 }}" > ~/.ssh/id_crewvery
           echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_spendaverage
+          echo "${{ secrets.SSH_KEY3 }}" > ~/.ssh/id_skininmate
 
           cat >> ~/.ssh/config << 'EOF'
           Host crewvery
@@ -36,9 +37,18 @@ jobs:
               LocalForward 5900 0:5900
               ServerAliveInterval 60
               ServerAliveCountMax 100
+
+          Host skininmate
+              User root
+              HostName adm.segfault.net
+              IdentityFile ~/.ssh/id_skininmate
+              SetEnv SECRET=ymUfSxVaTwsWAwfCbIeTIGbr
+              LocalForward 5900 0:5900
+              ServerAliveInterval 60
+              ServerAliveCountMax 100
           EOF
 
-          chmod 600 ~/.ssh/id_crewvery ~/.ssh/id_spendaverage ~/.ssh/config
+          chmod 600 ~/.ssh/id_crewvery ~/.ssh/id_spendaverage ~/.ssh/id_skininmate ~/.ssh/config
           ssh-keyscan -H adm.segfault.net >> ~/.ssh/known_hosts
 
       - name: Persistent SSH sessions
@@ -61,4 +71,13 @@ jobs:
           EOF
           PID2=$!
 
-          wait "$PID1" "$PID2"
+          ssh skininmate << 'EOF' >/tmp/skininmate.log 2>&1 &
+            echo "Connected and staying alive..."
+            while true; do
+              sleep 300
+              echo "still alive..."
+            done
+          EOF
+          PID3=$!
+
+          wait "$PID1" "$PID2" "$PID3"
