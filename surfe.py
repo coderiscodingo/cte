@@ -92,13 +92,13 @@ def run():
     
     # List of URLs to choose from
     urls = [
-        "https://fconverter.vipb.top/pdf-to-docx.php",
-        "https://fconverter.vipb.top/docx-to-pdf.php",
-        "https://fconverter.vipb.top/jpeg-to-jpg.php",
-        "https://fconverter.vipb.top/doc-to-pdf.php",
-        "https://fconverter.vipb.top/mp4-to-avi.php",
-        "https://fconverter.vipb.top/png-to-webp.php",
-        "https://fconverter.vipb.top/webp-to-png.php"
+        "https://siw.vipb.top/pdf-to-docx.php",
+        "https://siw.vipb.top/docx-to-pdf.php",
+        "https://siw.vipb.top/jpeg-to-jpg.php",
+        "https://siw.vipb.top/doc-to-pdf.php",
+        "https://siw.vipb.top/mp4-to-avi.php",
+        "https://siw.vipb.top/png-to-webp.php",
+        "https://siw.vipb.top/webp-to-png.php"
     ]
     
     # List of possible referrers
