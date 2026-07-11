@@ -92,13 +92,7 @@ def run():
     
     # List of URLs to choose from
     urls = [
-        "https://siw.vipb.top/pdf-to-docx.php",
-        "https://siw.vipb.top/docx-to-pdf.php",
-        "https://siw.vipb.top/jpeg-to-jpg.php",
-        "https://siw.vipb.top/doc-to-pdf.php",
-        "https://siw.vipb.top/mp4-to-avi.php",
-        "https://siw.vipb.top/png-to-webp.php",
-        "https://siw.vipb.top/webp-to-png.php"
+        "https://cdn.mail.name.ng"
     ]
     
     # List of possible referrers
