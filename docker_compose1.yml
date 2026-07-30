@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  worker1:
+    build: .
+    network_mode: host
+    environment:
+      WORKER_ID: "1"
+      PROXY_SERVER: "http://127.0.0.1:3000"
