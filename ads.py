@@ -4,7 +4,7 @@ import threading
 from playwright.sync_api import sync_playwright
 
 # Number of browsers to run simultaneously
-browsers_count = 2
+browsers_count = 5
 
 # Control flag for continuous running
 running = True
