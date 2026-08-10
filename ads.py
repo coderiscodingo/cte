@@ -4,7 +4,7 @@ import threading
 from patchright.sync_api import sync_playwright
 
 # Number of browsers to run simultaneously
-browsers_count = 5
+browsers_count = 2
 
 # Control flag for continuous running
 running = True
@@ -93,7 +93,7 @@ def browser_worker(worker_id):
             with sync_playwright() as p:
                 # Launch browser for Android mobile
                 browser = p.chromium.launch(
-                    headless=False,
+                    headless=True,
                     proxy={
                         "server": "http://127.0.0.1:3000"
                     },
