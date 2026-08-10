@@ -1,7 +1,7 @@
 import random
 import time
 import threading
-from patchright.sync_api import sync_playwright
+from playwright.sync_api import sync_playwright
 
 # Number of browsers to run simultaneously
 browsers_count = 2
