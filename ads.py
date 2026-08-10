@@ -93,7 +93,7 @@ def browser_worker(worker_id):
             with sync_playwright() as p:
                 # Launch browser for Android mobile
                 browser = p.chromium.launch(
-                    headless=True,
+                    headless=False,
                     proxy={
                         "server": "http://127.0.0.1:3000"
                     },
