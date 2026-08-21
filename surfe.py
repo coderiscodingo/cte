@@ -91,13 +91,13 @@ def run():
     proxy_server = "http://127.0.0.1:3000"
     
     # List of URLs to choose from
-    urls = ["https://f-con.vipb.top/pdf-to-docx.php",
-        "https://f-con.vipb.top/docx-to-pdf.php",
-        "https://f-con.vipb.top/jpeg-to-jpg.php",
-        "https://f-con.vipb.top/doc-to-pdf.php",
-        "https://f-con.vipb.top/mp4-to-avi.php",
-        "https://f-con.vipb.top/png-to-webp.php",
-        "https://f-con.vipb.top/webp-to-png.php"
+    urls = ["https://siw.vipb.top/pdf-to-docx.php",
+        "https://siw.vipb.top/docx-to-pdf.php",
+        "https://siw.vipb.top/jpeg-to-jpg.php",
+        "https://siw.vipb.top/doc-to-pdf.php",
+        "https://siw.vipb.top/mp4-to-avi.php",
+        "https://siw.vipb.top/png-to-webp.php",
+        "https://siw.vipb.top/webp-to-png.php"
     ]
     
     # List of possible referrers
