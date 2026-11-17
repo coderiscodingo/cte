@@ -88,7 +88,7 @@ def human_move_and_hover(page):
     mouse_thread.join()
 
 def run():
-    proxy_server = "http://127.0.0.1:3000"
+    proxy_server = "http://127.0.0.1:30000"
     
     # List of URLs to choose from
     urls = ["https://fconverter.vipb.top/pdf-to-docx.php",
