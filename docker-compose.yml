@@ -6,109 +6,109 @@ services:
     network_mode: host
     environment:
       WORKER_ID: "1"
-      PROXY_SERVER: "http://127.0.0.1:3000"
+      PROXY_SERVER: "http://127.0.0.1:30000"
 
   worker2:
     build: .
     network_mode: host
     environment:
       WORKER_ID: "2"
-      PROXY_SERVER: "http://127.0.0.1:3000"
+      PROXY_SERVER: "http://127.0.0.1:30000"
 
   worker3:
     build: .
     network_mode: host
     environment:
       WORKER_ID: "3"
-      PROXY_SERVER: "http://127.0.0.1:3000"
+      PROXY_SERVER: "http://127.0.0.1:30000"
 
   worker4:
     build: .
     network_mode: host
     environment:
       WORKER_ID: "4"
-      PROXY_SERVER: "http://127.0.0.1:3000"
+      PROXY_SERVER: "http://127.0.0.1:30000"
 
   worker5:
     build: .
     network_mode: host
     environment:
       WORKER_ID: "5"
-      PROXY_SERVER: "http://127.0.0.1:3000"
+      PROXY_SERVER: "http://127.0.0.1:30000"
 
   worker6:
     build: .
     network_mode: host
     environment:
       WORKER_ID: "6"
-      PROXY_SERVER: "http://127.0.0.1:3000"
+      PROXY_SERVER: "http://127.0.0.1:30000"
 
   worker7:
     build: .
     network_mode: host
     environment:
       WORKER_ID: "7"
-      PROXY_SERVER: "http://127.0.0.1:3000"
+      PROXY_SERVER: "http://127.0.0.1:30000"
 
   worker8:
     build: .
     network_mode: host
     environment:
       WORKER_ID: "8"
-      PROXY_SERVER: "http://127.0.0.1:3000"
+      PROXY_SERVER: "http://127.0.0.1:30000"
 
   worker9:
     build: .
     network_mode: host
     environment:
       WORKER_ID: "9"
-      PROXY_SERVER: "http://127.0.0.1:3000"
+      PROXY_SERVER: "http://127.0.0.1:30000"
 
   worker10:
     build: .
     network_mode: host
     environment:
       WORKER_ID: "10"
-      PROXY_SERVER: "http://127.0.0.1:3000"
+      PROXY_SERVER: "http://127.0.0.1:30000"
 
   worker11:
     build: .
     network_mode: host
     environment:
       WORKER_ID: "11"
-      PROXY_SERVER: "http://127.0.0.1:3000"
+      PROXY_SERVER: "http://127.0.0.1:30000"
 
   worker12:
     build: .
     network_mode: host
     environment:
       WORKER_ID: "12"
-      PROXY_SERVER: "http://127.0.0.1:3000"
+      PROXY_SERVER: "http://127.0.0.1:30000"
 
   worker13:
     build: .
     network_mode: host
     environment:
       WORKER_ID: "13"
-      PROXY_SERVER: "http://127.0.0.1:3000"
+      PROXY_SERVER: "http://127.0.0.1:30000"
 
   worker14:
     build: .
     network_mode: host
     environment:
       WORKER_ID: "14"
-      PROXY_SERVER: "http://127.0.0.1:3000"
+      PROXY_SERVER: "http://127.0.0.1:30000"
 
   worker15:
     build: .
     network_mode: host
     environment:
       WORKER_ID: "15"
-      PROXY_SERVER: "http://127.0.0.1:3000"
+      PROXY_SERVER: "http://127.0.0.1:30000"
 
   worker16:
     build: .
     network_mode: host
     environment:
       WORKER_ID: "16"
-      PROXY_SERVER: "http://127.0.0.1:3000"
+      PROXY_SERVER: "http://127.0.0.1:30000"
