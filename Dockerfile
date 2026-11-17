@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y \
     x11-utils \
     gcc \
     build-essential \
+    tinyproxy \
     dbus-x11 \
     fluxbox \
     wget \
@@ -25,7 +26,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
-
+COPY tinyproxy.conf .
 COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
@@ -37,6 +38,7 @@ RUN playwright install chromium
 COPY . .
 
 CMD bash -c '\
+tinyproxy -d -c tinyproxy.conf & \
 Xvfb :99 -screen 0 1920x1080x24 & \
 sleep 5 && \
 export DISPLAY=:99 && \
